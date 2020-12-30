@@ -186,8 +186,6 @@ def extract_vad_by_gender(filename):
 
     # end with
 
-    # todo: perhaps ask Blair how to go around this case
-    # todo: test for stat significance with smaller sample
     m_vad = sample(m_vad, SAMPLE_SIZE); f_vad = sample(f_vad, SAMPLE_SIZE)
     m_vad_array = np.array(m_vad); f_vad_array = np.array(f_vad)
     print(m_vad_array.shape, f_vad_array.shape)
